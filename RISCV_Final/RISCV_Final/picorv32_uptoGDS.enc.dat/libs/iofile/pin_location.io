@@ -1,1 +1,0 @@
-/home/arpit23132/Desktop/RISCV_Final/pin_location.io

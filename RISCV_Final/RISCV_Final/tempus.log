@@ -1,0 +1,171 @@
+
+Cadence Tempus(TM) Timing Signoff Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.10-p003_1, built Wed Apr 29 15:56:37 PDT 2020
+Options:	
+Date:		Sun Jan 11 15:49:43 2026
+Host:		edatools-server2.iiitd.edu.in (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (18cores*72cpus*Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz 39936KB)
+OS:		Red Hat Enterprise Linux Server release 6.10 (Santiago)
+
+License:
+		tpsxl	Tempus Timing Signoff Solution XL	20.1	checkout succeeded
+		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (1033 mbytes). Set global soft_stack_size_limit to change the value.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_72551_JJZwEH'.
+<CMD> read_lib slow.lib
+<CMD> read_verilog final.v
+<CMD> set_top_module picorv32
+#% Begin Load MMMC data ... (date=01/11 15:50:05, mem=520.4M)
+Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+#% End Load MMMC data ... (date=01/11 15:50:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=520.4M, current mem=519.7M)
+default_emulate_early_rc_corner default_emulate_late_rc_corner default_emulate_rc_corner
+Loading view definition file from .ssv_emulate_view_definition_72551.tcl
+Reading default_emulate_libset_max timing library '/home/arpit23132/Desktop/RISCV_Final/slow.lib' ...
+Read 479 cells in library 'slow' 
+*** End library_loading (cpu=0.01min, real=0.00min, mem=15.0M, fe_cpu=0.18min, fe_real=0.37min, fe_mem=795.8M) ***
+#% Begin Load netlist data ... (date=01/11 15:50:05, mem=525.1M)
+*** Begin netlist parsing (mem=795.8M) ***
+Reading verilog netlist 'final.v'
+
+*** Memory Usage v#1 (Current mem = 947.875M, initial mem = 273.305M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=947.9M) ***
+#% End Load netlist data ... (date=01/11 15:50:06, total cpu=0:00:00.3, real=0:00:01.0, peak res=632.5M, current mem=624.2M)
+Set top cell to picorv32.
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Building hierarchical netlist for Cell picorv32 ...
+*** Netlist is unique.
+** info: there are 480 modules.
+** info: there are 6220 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1152.828M, initial mem = 273.305M) ***
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+/dev/null
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+late library set: default_emulate_libset_max
+early library set: default_emulate_libset_min
+Completed consistency checks. Status: Successful
+Reading timing constraints file '/dev/null' ...
+Current (total cpu=0:00:11.5, real=0:00:23.0, peak res=929.6M, current mem=929.6M)
+Total number of combinational cells: 316
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX12 INVX16 INVX2 INVX20 INVX3 INVX4 INVX6 INVXL INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X4 DLY4X1
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+default_emulate_constraint_mode
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+Extraction setup Started 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: default_emulate_view
+    RC-Corner Name        : default_emulate_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+default_emulate_libset_max default_emulate_libset_min
+<CMD> read_sdc constraints.sdc
+Current (total cpu=0:00:11.8, real=0:00:23.0, peak res=952.1M, current mem=911.6M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=918.8M, current mem=918.8M)
+Current (total cpu=0:00:11.8, real=0:00:23.0, peak res=952.1M, current mem=918.8M)
+<CMD> check_timing > $report_dir/check_timing_maxfreq.rpt
+**WARN: (IMPESI-3468):	User needs to specify -equivalent_waveform_model propagation first before specifying -waveform_compression_mode accurate|clock_detailed .
+AAE DB initialization (MEM=1324.57 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Name: picorv32
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Start delay calculation (fullDC) (1 T). (MEM=1180.58)
+/dev/null
+End delay calculation. (MEM=1226.41 CPU=0:00:00.7 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=1218.41 CPU=0:00:00.8 REAL=0:00:01.0)
+<CMD> report_timing > $report_dir/timing_report_maxfreq.rpt
+<CMD> report_timing -retime path_slew_propagation -max_path 50 -nworst 50 -path_type full_clock > $report_dir/pba_maxfreq.rpt
+INFO: Path Based Analysis (PBA) performed on total '50' paths
+<CMD> report_analysis_coverage > $report_dir/analysis_coverage_maxfreq.rpt
+<CMD> report_analysis_summary > $report_dir/analysis_summary_maxfreq.rpt
+<CMD> report_clocks > $report_dir/clocks_maxfreq.rpt
+<CMD> report_case_analysis > $report_dir/case_analysis_maxfreq.rpt
+<CMD> report_constraints -all_violators > sta_after_synthesis_maxfreq/reports/allviolations_maxfreq.rpt
+Loading  (picorv32)
+Traverse HInst (picorv32)
+
+--------------------------------------------------------------------------------
+Exiting Tempus Timing Signoff Solution on Sun Jan 11 15:50:22 2026
+  Total CPU time:     0:00:17
+  Total real time:    0:00:40
+  Peak memory (main): 922.89MB
+
+
+*** Memory Usage v#1 (Current mem = 1237.285M, initial mem = 273.305M) ***
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPESI-3468          1  User needs to specify -equivalent_wavefo...
+*** Message Summary: 1 warning(s), 0 error(s)
+
+--- Ending "Tempus Timing Signoff Solution" (totcpu=0:00:16.8, real=0:00:39.0, mem=1237.3M) ---

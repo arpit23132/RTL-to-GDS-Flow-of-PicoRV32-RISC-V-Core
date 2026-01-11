@@ -1,0 +1,30 @@
+ *** Starting Verify DRC (MEM: 2355.5) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+  VERIFY DRC ...... Sub-Area: {-168.055 -166.315 -54.775 -54.955} 1 of 9
+  VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area: {-54.775 -166.315 58.505 -54.955} 2 of 9
+  VERIFY DRC ...... Sub-Area : 2 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area: {58.505 -166.315 168.055 -54.955} 3 of 9
+  VERIFY DRC ...... Sub-Area : 3 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area: {-168.055 -54.955 -54.775 56.405} 4 of 9
+  VERIFY DRC ...... Sub-Area : 4 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area: {-54.775 -54.955 58.505 56.405} 5 of 9
+  VERIFY DRC ...... Sub-Area : 5 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area: {58.505 -54.955 168.055 56.405} 6 of 9
+  VERIFY DRC ...... Sub-Area : 6 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area: {-168.055 56.405 -54.775 166.315} 7 of 9
+  VERIFY DRC ...... Sub-Area : 7 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area: {-54.775 56.405 58.505 166.315} 8 of 9
+  VERIFY DRC ...... Sub-Area : 8 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area: {58.505 56.405 168.055 166.315} 9 of 9
+  VERIFY DRC ...... Sub-Area : 9 complete 0 Viols.
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:01.7  ELAPSED TIME: 2.00  MEM: 0.0M) ***
+

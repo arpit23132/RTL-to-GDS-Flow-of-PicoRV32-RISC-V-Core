@@ -1,0 +1,1360 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 19.13-s073_1, built Fri Mar 20 01:36:16 PDT 2020
+Options: 
+Date:    Sun Jan 11 15:46:40 2026
+Host:    edatools-server2.iiitd.edu.in (x86_64 w/Linux 2.6.32-754.35.1.el6.x86_64) (18cores*72cpus*2physical cpus*Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz 39936KB) (528955884KB)
+PID:     70158
+OS:      Red Hat Enterprise Linux Server release 6.10 (Santiago)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (5 seconds elapsed).
+
+WARNING: This version of the tool is 2123 days old.
+@genus:root: 1> source synth.tcl
+Sourcing './synth.tcl' (Sun Jan 11 15:46:50 IST 2026)...
+#@ Begin verbose source synth.tcl
+@file(synth.tcl) 2: set TOP_NAME           picorv32
+@file(synth.tcl) 3: set LIB_FILES          { ./slow.lib }
+@file(synth.tcl) 4: set SDC_FILE           [file normalize ./constraints.sdc]
+@file(synth.tcl) 5: set HDL_DEFINES        {ENABLE_IRQ=0 ENABLE_TRACE=0 ENABLE_PCPI=0}
+@file(synth.tcl) 8: set_db lib_search_path [list . [pwd]]
+  Setting attribute of root '/': 'lib_search_path' = . /home/arpit23132/Desktop/RISCV_Final
+@file(synth.tcl) 9: foreach lib $LIB_FILES { read_lib $lib }
+
+Threads Configured:3
+
+  Message Summary for Library slow.lib:
+  *************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  Missing library level attribute. [LBR-516]: 1
+  *************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+@file(synth.tcl) 12: set_db hdl_unconnected_value 0
+  Setting attribute of root '/': 'hdl_unconnected_value' = 0
+@file(synth.tcl) 13: set_db optimize_merge_flops false
+  Setting attribute of root '/': 'optimize_merge_flops' = false
+@file(synth.tcl) 14: set_db lp_insert_clock_gating false
+  Setting attribute of root '/': 'lp_insert_clock_gating' = false
+@file(synth.tcl) 15: set_db syn_opt_effort low
+  Setting attribute of root '/': 'syn_opt_effort' = low
+@file(synth.tcl) 20: read_hdl -define $HDL_DEFINES ./picorv32.v
+	(* preserve *) reg is_compare;
+	   |
+Warning : Unused attribute. [VLOGPT-506]
+        : Attribute 'preserve' in file './picorv32.v' on line 716, column 5.
+@file(synth.tcl) 21: elaborate $TOP_NAME
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX12' is a sequential timing arc.
+        : The library cell will be treated as a timing-model. Make sure that the timing arcs and output function are defined correctly. Even if the cell intends to have dual-functionality, it cannot be unmapped or automatically inferred.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'TLATNCAX8' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX12' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX16' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX2' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX20' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX3' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX4' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX6' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_SE_Ha3' between pins 'CK' and 'SE' in libcell 'TLATNTSCAX8' is a sequential timing arc.
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'picorv32' from file './picorv32.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'picorv32' with default parameters value.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'picorv32' in file './picorv32.v' on line 417.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'picorv32' in file './picorv32.v' on line 426.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'picorv32' in file './picorv32.v' on line 613.
+Warning : Ignored redundant case item. [CDFG-480]
+        : Case item '0' in module 'picorv32' in file './picorv32.v' on line 1355.
+        : When multiple case item expressions match the case condition, only the statements associated with the first matching item are considered.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item '6' in module 'picorv32' in file './picorv32.v' on line 1355.
+Warning : Ignored redundant case item. [CDFG-480]
+        : Case item '0' in module 'picorv32' in file './picorv32.v' on line 1401.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item '3' in module 'picorv32' in file './picorv32.v' on line 1401.
+Warning : Ignored redundant case item. [CDFG-480]
+        : Case item '0' in module 'picorv32' in file './picorv32.v' on line 1584.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item '3' in module 'picorv32' in file './picorv32.v' on line 1584.
+Warning : Ignored redundant case item. [CDFG-480]
+        : Case item '0' in module 'picorv32' in file './picorv32.v' on line 1731.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item '4' in module 'picorv32' in file './picorv32.v' on line 1731.
+Warning : Ignored redundant case item. [CDFG-480]
+        : Case item '0' in module 'picorv32' in file './picorv32.v' on line 1740.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item '5' in module 'picorv32' in file './picorv32.v' on line 1740.
+Warning : Ignored redundant case item. [CDFG-480]
+        : Case item '0' in module 'picorv32' in file './picorv32.v' on line 1751.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item '6' in module 'picorv32' in file './picorv32.v' on line 1751.
+Warning : Ignored redundant case item. [CDFG-480]
+        : Case item '0' in module 'picorv32' in file './picorv32.v' on line 1760.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item '7' in module 'picorv32' in file './picorv32.v' on line 1760.
+Warning : Ignored redundant case item. [CDFG-480]
+        : Case item '0' in module 'picorv32' in file './picorv32.v' on line 1785.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'pcpi_int_wait' in module 'picorv32' in file './picorv32.v' on line 325.
+        : Genus removes the flip-flop or latch inferred for an unused signal or variable. To preserve the flip-flop or latch, set the hdl_preserve_unused_registers attribute to true or use a pragma in the RTL.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'mem_la_firstword_reg' in module 'picorv32' in file './picorv32.v' on line 395.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'last_mem_valid' in module 'picorv32' in file './picorv32.v' on line 395.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'next_insn_opcode' in module 'picorv32' in file './picorv32.v' on line 443.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'mem_la_secondword' in module 'picorv32' in file './picorv32.v' on line 597.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'prefetched_high_word' in module 'picorv32' in file './picorv32.v' on line 597.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'new_ascii_instr' in module 'picorv32' in file './picorv32.v' on line 740.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'dbg_insn_addr' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'q_ascii_instr' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'q_insn_imm' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'q_insn_opcode' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'q_insn_rs1' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'q_insn_rs2' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'q_insn_rd' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'dbg_next' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'dbg_valid_insn' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'cached_ascii_instr' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'cached_insn_imm' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'cached_insn_opcode' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'cached_insn_rs1' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'cached_insn_rs2' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'cached_insn_rd' in module 'picorv32' in file './picorv32.v' on line 817.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'dbg_insn_opcode' in module 'picorv32' in file './picorv32.v' on line 848.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'dbg_ascii_instr' in module 'picorv32' in file './picorv32.v' on line 848.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'dbg_insn_imm' in module 'picorv32' in file './picorv32.v' on line 848.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'dbg_insn_rs1' in module 'picorv32' in file './picorv32.v' on line 848.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'dbg_insn_rs2' in module 'picorv32' in file './picorv32.v' on line 848.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'dbg_insn_rd' in module 'picorv32' in file './picorv32.v' on line 848.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'dbg_ascii_state' in module 'picorv32' in file './picorv32.v' on line 1259.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'alu_shr' in module 'picorv32' in file './picorv32.v' on line 1312.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'clear_prefetched_high_word_q' in module 'picorv32' in file './picorv32.v' on line 1366.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'clear_prefetched_high_word' in module 'picorv32' in file './picorv32.v' on line 1368.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'decoded_rs' in module 'picorv32' in file './picorv32.v' on line 1421.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'irq_delay' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'irq_active' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'irq_mask' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'irq_pending' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'timer' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'decoder_trigger_q' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'decoder_pseudo_trigger_q' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'dbg_rs1val' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'dbg_rs2val' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'dbg_rs1val_valid' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'dbg_rs2val_valid' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'irq_state' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'latched_trace' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'alu_out_0_q' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'alu_wait' in module 'picorv32' in file './picorv32.v' on line 1475.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'alu_wait_2' in module 'picorv32' in file './picorv32.v' on line 1475.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'picorv32'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+UM:   timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      elaborate
+@file(synth.tcl) 24: read_sdc $SDC_FILE
+Statistics for commands executed by read_sdc:
+ "create_clock"             - successful      1 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      1 , failed      0 (runtime  0.00)
+Total runtime 0.0
+@file(synth.tcl) 27: syn_generic
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 47 hierarchical instances.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does not drive any primary outputs anymore. To see the list of deleted hierarchical instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list. To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance attribute to 'true'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'mem_addr_reg[0]'.
+        : To prevent this optimization, set the 'optimize_constant_0_flops' root attribute to 'false' or 'optimize_constant_0_seq' instance attribute to 'false'. You can also see the complete list of deleted sequential with command "report sequential -deleted" (on Reason "constant0").
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'mem_addr_reg[1]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[1]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[2]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[3]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[4]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[5]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[6]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[7]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[8]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[9]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[10]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[11]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[12]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[13]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[14]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[15]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[16]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[17]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[18]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[19]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[20]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[21]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[22]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[23]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[24]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[25]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[26]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[27]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[28]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[29]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[30]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_insn_reg[31]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_getq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_setq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_retirq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_maskirq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_waitirq_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'instr_timer_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'decoded_imm_j_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'compressed_instr_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_valid_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[1]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[2]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[3]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[4]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[5]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[6]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[7]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[8]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[9]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[10]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[11]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[12]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[13]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[14]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[15]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[16]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[17]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[18]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[19]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[20]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[21]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[22]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[23]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[24]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[25]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[26]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[27]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[28]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[29]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[30]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'eoi_reg[31]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_valid_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[0]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[1]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[2]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[3]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[4]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[5]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[6]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[7]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[8]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[9]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[10]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[11]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[12]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[13]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[14]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[15]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[16]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[17]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[18]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[19]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[20]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[21]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[22]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[23]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[24]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[25]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[26]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[27]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[28]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[29]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[30]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[31]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[32]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[33]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[34]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'trace_data_reg[35]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'cpu_state_reg[4]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'latched_compr_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'pcpi_timeout_reg'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'do_waitirq_reg'.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 117 sequential instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 1 hierarchical instance.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 4 hierarchical instances.
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'picorv32' to generic gates using 'medium' effort.
+PBS_Generic-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+TNS Restructuring config:  at stage: generic applied.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][0]'.
+        : The value used to replace the flop can be set by the root attribute 'optimize_seq_x_to'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][1]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][2]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][3]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][4]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][5]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][6]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][7]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][8]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][9]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][10]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][11]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][12]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][13]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][14]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][15]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][16]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][17]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][18]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][19]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][20]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][21]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][22]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][23]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][24]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][25]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][26]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][27]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][28]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][29]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][30]'.
+Info    : Replacing a blocking flip-flop with a logic constant 0. [GLO-21]
+        : The instance is 'cpuregs_reg[0][31]'.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 32 sequential instances.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 1 hierarchical instance.
+Starting mux data reorder optimization [v1.0] (stage: post_to_gen_setup, startdef: picorv32, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.017s)
+Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: picorv32, recur: true)
+Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.012s)
+Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: picorv32, recur: true)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.012s)
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : Pre-processing optimizations applied to datapath logic in 'picorv32':
+          sop(1) 
+Info    : Optimizing datapath logic. [DPOPT-1]
+        : Optimizing datapath logic in 'picorv32'.
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region'
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_alu_out_0_1325_3 in module CDN_DP_region_c1.
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_cpu_state_1809_8 in module CDN_DP_region_c1.
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_mem_do_rinst_1809_8 in module CDN_DP_region_c1.
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_reg_out_1701_7 in module CDN_DP_region_c1.
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_reg_out_1975_7 in module CDN_DP_region_c1.
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c1 in picorv32':
+	  (add_1642_33, add_1633_32)
+	  (sub_1313_38, add_1313_58)
+
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_alu_out_0_1325_3 in module CDN_DP_region_c1.
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_cpu_state_1809_8 in module CDN_DP_region_c1.
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_mem_do_rinst_1809_8 in module CDN_DP_region_c1.
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_reg_out_1701_7 in module CDN_DP_region_c1.
+Warning : Use of 'parallel_case' pragma may hinder datapath resource sharing. [RTLOPT-54]
+        : Multiplexor mux_reg_out_1975_7 in module CDN_DP_region_c1.
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c2 in picorv32':
+	  (add_1642_33, add_1633_32)
+	  (sub_1313_38, add_1313_58)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c3 in picorv32':
+	  (add_1642_33, add_1633_32)
+	  (sub_1313_38, add_1313_58)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c4 in picorv32':
+	  (add_1642_33, add_1633_32)
+	  (sub_1313_38, add_1313_58)
+
+Info    : Accepted resource sharing opportunity. [RTLOPT-30]
+        : Merged the following sets of instances in 'CDN_DP_region_c5 in picorv32':
+	  (add_1642_33, add_1633_32)
+	  (sub_1313_38, add_1313_58)
+
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 5 for module 'CDN_DP_region'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(2), cmultcse(0), downsizing(0), speculation(0)
+Info    : Done optimizing datapath logic. [DPOPT-2]
+        : Done optimizing datapath logic in 'picorv32'.
+Starting mux data reorder optimization [v1.0] (stage: post_rtlopt, startdef: picorv32, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.010s)
+Starting mux speculation [v1.0] (stage: post_muxopt, startdef: picorv32, recur: true)
+Starting speculation optimization
+Completed speculation optimization (accepts:0)
+Completed mux speculation (accepts: 0, rejects: 0, runtime: 0.451s)
+==================================
+Stage : to_generic 
+==================================
+  =================
+   Message Summary
+  =================
+--------------------------------------------------------------------------------
+|     Id     |  Sev   |Count |                  Message Text                   |
+--------------------------------------------------------------------------------
+| CDFG-250   |Info    |    1 |Processing multi-dimensional arrays.             |
+| CDFG-372   |Info    |  212 |Bitwidth mismatch in assignment.                 |
+|            |        |      |Review and make sure the mismatch is             |
+|            |        |      | unintentional. Genus can possibly issue         |
+|            |        |      | bitwidth mismatch warning for explicit          |
+|            |        |      | assignments present in RTL as-well-as for       |
+|            |        |      | implicit assignments inferred by the tool. For  |
+|            |        |      | example, in case of enum declaration without    |
+|            |        |      | value, the tool will implicitly assign value to |
+|            |        |      | the enum variables. It also issues the warning  |
+|            |        |      | for any bitwidth mismatch that appears in this  |
+|            |        |      | implicit assignment.                            |
+| CDFG-373   |Info    |    9 |Sign mismatch in assignment.                     |
+| CDFG-472   |Warning |   10 |Unreachable statements for case item.            |
+| CDFG-480   |Warning |    8 |Ignored redundant case item.                     |
+|            |        |      |When multiple case item expressions match the    |
+|            |        |      | case condition, only the statements associated  |
+|            |        |      | with the first matching item are considered.    |
+| CDFG-500   |Info    |    5 |Unused module input port.                        |
+|            |        |      |In port definition within the module, the input  |
+|            |        |      | port is not used in any assignment statements   |
+|            |        |      | or conditional expressions for decision         |
+|            |        |      | statements.                                     |
+| CDFG-508   |Warning |   49 |Removing unused register.                        |
+|            |        |      |Genus removes the flip-flop or latch inferred    |
+|            |        |      | for an unused signal or variable. To preserve   |
+|            |        |      | the flip-flop or latch, set the                 |
+|            |        |      | hdl_preserve_unused_registers attribute to true |
+|            |        |      | or use a pragma in the RTL.                     |
+| CDFG-738   |Info    |   63 |Common subexpression eliminated.                 |
+| CDFG-739   |Info    |   63 |Common subexpression kept.                       |
+| CDFG-769   |Info    |    1 |Identified sum-of-products logic to be optimized |
+|            |        |      | during syn_generic.                             |
+| CDFG-771   |Info    |    5 |Replaced logic with a constant value.            |
+| CDFG-818   |Warning |    1 |Using default parameter value for module         |
+|            |        |      | elaboration.                                    |
+| CWD-19     |Info    |  141 |An implementation was inferred.                  |
+| DPOPT-1    |Info    |    1 |Optimizing datapath logic.                       |
+| DPOPT-2    |Info    |    1 |Done optimizing datapath logic.                  |
+| DPOPT-3    |Info    |    1 |Implementing datapath configurations.            |
+| DPOPT-4    |Info    |    1 |Done implementing datapath configurations.       |
+| DPOPT-6    |Info    |    1 |Pre-processed datapath logic.                    |
+| DPOPT-10   |Info    |    7 |Optimized a mux chain.                           |
+| ELAB-1     |Info    |    1 |Elaborating Design.                              |
+| ELAB-3     |Info    |    1 |Done Elaborating Design.                         |
+| GB-6       |Info    |    1 |A datapath component has been ungrouped.         |
+| GLO-12     |Info    |  116 |Replacing a flip-flop with a logic constant 0.   |
+|            |        |      |To prevent this optimization, set the            |
+|            |        |      | 'optimize_constant_0_flops' root attribute to   |
+|            |        |      | 'false' or 'optimize_constant_0_seq' instance   |
+|            |        |      | attribute to 'false'. You can also see the      |
+|            |        |      | complete list of deleted sequential with        |
+|            |        |      | command 'report sequential -deleted'            |
+|            |        |      | (on Reason 'constant0').                        |
+| GLO-21     |Info    |   32 |Replacing a blocking flip-flop with a logic      |
+|            |        |      | constant 0.                                     |
+|            |        |      |The value used to replace the flop can be set by |
+|            |        |      | the root attribute 'optimize_seq_x_to'.         |
+| GLO-34     |Info    |    6 |Deleting instances not driving any primary       |
+|            |        |      | outputs.                                        |
+|            |        |      |Optimizations such as constant propagation or    |
+|            |        |      | redundancy removal could change the connections |
+|            |        |      | so a hierarchical instance does not drive any   |
+|            |        |      | primary outputs anymore. To see the list of     |
+|            |        |      | deleted hierarchical instances, set the         |
+|            |        |      | 'information_level' attribute to 2 or above. If |
+|            |        |      | the message is truncated set the message        |
+|            |        |      | attribute 'truncate' to false to see the        |
+|            |        |      | complete list. To prevent this optimization,    |
+|            |        |      | set the 'delete_unloaded_insts' root/subdesign  |
+|            |        |      | attribute to 'false' or 'preserve' instance     |
+|            |        |      | attribute to 'true'.                            |
+| GLO-46     |Info    |    1 |Combinational hierarchical instances are merged. |
+| LBR-41     |Info    |    1 |An output library pin lacks a function           |
+|            |        |      | attribute.                                      |
+|            |        |      |If the remainder of this library cell's semantic |
+|            |        |      | checks are successful, it will be considered as |
+|            |        |      | a timing-model                                  |
+|            |        |      | (because one of its outputs does not have a val |
+|            |        |      | id function.                                    |
+| LBR-76     |Warning |   16 |Detected both combinational and sequential       |
+|            |        |      | timing arcs in a library cell. This might       |
+|            |        |      | prevent the tool from using this cell for       |
+|            |        |      | technology mapping. The tool will treat it as   |
+|            |        |      | unusable.                                       |
+|            |        |      |The library cell will be treated as a            |
+|            |        |      | timing-model. Make sure that the timing arcs    |
+|            |        |      | and output function are defined correctly. Even |
+|            |        |      | if the cell intends to have dual-functionality, |
+|            |        |      | it cannot be unmapped or automatically          |
+|            |        |      | inferred.                                       |
+| LBR-155    |Info    |  372 |Mismatch in unateness between 'timing_sense'     |
+|            |        |      | attribute and the function.                     |
+|            |        |      |The 'timing_sense' attribute will be respected.  |
+| LBR-161    |Info    |    1 |Setting the maximum print count of this message  |
+|            |        |      | to 10 if information_level is less than 9.      |
+| LBR-162    |Info    |  124 |Both 'pos_unate' and 'neg_unate' timing_sense    |
+|            |        |      | arcs have been processed.                       |
+|            |        |      |Setting the 'timing_sense' to non_unate.         |
+| LBR-170    |Info    |   32 |Ignoring specified timing sense.                 |
+|            |        |      |Timing sense should never be set with            |
+|            |        |      | 'rising_edge' or 'falling_edge' timing type.    |
+| LBR-412    |Info    |    1 |Created nominal operating condition.             |
+|            |        |      |The nominal operating condition is represented,  |
+|            |        |      | either by the nominal PVT values specified in   |
+|            |        |      | the library source                              |
+|            |        |      | (via nom_process,nom_voltage and nom_temperatur |
+|            |        |      | e respectively)                                 |
+|            |        |      | , or by the default PVT values (1.0,1.0,1.0).   |
+| LBR-516    |Info    |    1 |Missing library level attribute.                 |
+| LBR-518    |Info    |    1 |Missing a function attribute in the output pin   |
+|            |        |      | definition.                                     |
+| PHYS-752   |Info    |    1 |Partition Based Synthesis execution skipped.     |
+| RTLOPT-30  |Info    |    5 |Accepted resource sharing opportunity.           |
+| RTLOPT-54  |Warning |   50 |Use of 'parallel_case' pragma may hinder         |
+|            |        |      | datapath resource sharing.                      |
+| SYNTH-1    |Info    |    1 |Synthesizing.                                    |
+| TUI-31     |Warning |    2 |Obsolete command.                                |
+|            |        |      |This command is no longer supported.             |
+| VLOGPT-506 |Warning |    1 |Unused attribute.                                |
+--------------------------------------------------------------------------------
+Mapper: Libraries have:
+	domain _default_: 324 combo usable cells and 128 sequential usable cells
+Multi-threaded constant propagation [1|0] ...
+Info    : Replacing the synchronous part of an always feeding back flip-flop with a logic constant. [GLO-45]
+        : The instance is 'reg_next_pc_reg[0]'. The constant is '0'.
+        : To prevent this optimization, set 'optimize_constant_feedback_seqs' root attribute to 'false'. The instance attribute 'optimize_constant_feedback_seq' controls this optimization. 
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_next_pc_reg[0]'.
+Info    : Replacing the synchronous part of an always feeding back flip-flop with a logic constant. [GLO-45]
+        : The instance is 'reg_pc_reg[0]'. The constant is '0'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_pc_reg[0]'.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 2 sequential instances.
+Info    : Deleting sequential instances not driving any primary outputs. [GLO-32]
+        : Deleting 1 sequential instance.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so an instance does not drive any primary outputs anymore. To see the list of deleted sequential, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list.
+Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 72 CPUs usable)
+==================================
+Stage : first_condense 
+==================================
+  =================
+   Message Summary
+  =================
+--------------------------------------------------------------------------------
+|   Id   |Sev  |Count |                     Message Text                       |
+--------------------------------------------------------------------------------
+| GB-6   |Info |    3 |A datapath component has been ungrouped.                |
+| GLO-12 |Info |    2 |Replacing a flip-flop with a logic constant 0.          |
+|        |     |      |To prevent this optimization, set the                   |
+|        |     |      | 'optimize_constant_0_flops' root attribute to 'false'  |
+|        |     |      | or 'optimize_constant_0_seq' instance attribute to     |
+|        |     |      | 'false'. You can also see the complete list of deleted |
+|        |     |      | sequential with command 'report sequential -deleted'   |
+|        |     |      | (on Reason 'constant0').                               |
+| GLO-32 |Info |    1 |Deleting sequential instances not driving any primary   |
+|        |     |      | outputs.                                               |
+|        |     |      |Optimizations such as constant propagation or           |
+|        |     |      | redundancy removal could change the connections so an  |
+|        |     |      | instance does not drive any primary outputs anymore.   |
+|        |     |      | To see the list of deleted sequential, set the         |
+|        |     |      | 'information_level' attribute to 2 or above. If the    |
+|        |     |      | message is truncated set the message attribute         |
+|        |     |      | 'truncate' to false to see the complete list.          |
+| GLO-34 |Info |    1 |Deleting instances not driving any primary outputs.     |
+|        |     |      |Optimizations such as constant propagation or           |
+|        |     |      | redundancy removal could change the connections so a   |
+|        |     |      | hierarchical instance does not drive any primary       |
+|        |     |      | outputs anymore. To see the list of deleted            |
+|        |     |      | hierarchical instances, set the 'information_level'    |
+|        |     |      | attribute to 2 or above. If the message is truncated   |
+|        |     |      | set the message attribute 'truncate' to false to see   |
+|        |     |      | the complete list. To prevent this optimization, set   |
+|        |     |      | the 'delete_unloaded_insts' root/subdesign attribute   |
+|        |     |      | to 'false' or 'preserve' instance attribute to 'true'. |
+| GLO-45 |Info |    2 |Replacing the synchronous part of an always feeding     |
+|        |     |      | back flip-flop with a logic constant.                  |
+|        |     |      |To prevent this optimization, set                       |
+|        |     |      | 'optimize_constant_feedback_seqs' root attribute to    |
+|        |     |      | 'false'. The instance attribute                        |
+|        |     |      | 'optimize_constant_feedback_seq' controls this         |
+|        |     |      | optimization.                                          |
+| GLO-51 |Info |    2 |Hierarchical instance automatically ungrouped.          |
+|        |     |      |Hierarchical instances can be automatically ungrouped   |
+|        |     |      | to allow for better area or timing optimization. To    |
+|        |     |      | prevent this ungroup, set the root-level attribute     |
+|        |     |      | 'auto_ungroup' to 'none'. You can also prevent         |
+|        |     |      | individual ungroup with setting the attribute          |
+|        |     |      | 'ungroup_ok' of instances or modules to 'false'.       |
+--------------------------------------------------------------------------------
+ 
+Global mapping target info
+==========================
+Cost Group 'clk' target slack:   145 ps
+Target path end-point (Pin: count_cycle_reg[63]/d)
+
+
+State Retention Synthesis Status
+================================
+
+Category                        Flops   Percentage
+--------------------------------------------------
+Total instances                  1577        100.0
+Excluded from State Retention    1577        100.0
+    - Will not convert           1577        100.0
+      - Preserved                   0          0.0
+      - Power intent excluded    1577        100.0
+    - Could not convert             0          0.0
+      - Scan type                   0          0.0
+      - No suitable cell            0          0.0
+State Retention instances           0          0.0
+--------------------------------------------------
+
+PBS_Generic_Opt-Post - Elapsed_Time 54, CPU_Time 55.91119399999998
+stamp 'PBS_Generic_Opt-Post' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) | 100.0(100.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_Generic-Postgen HBO Optimizations - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Postgen HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) | 100.0(100.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+##>=================== Cadence Confidential (Generic-Logical) ===================
+##>=================== Cadence Confidential (Generic-Logical) ===================
+##>Main Thread Summary:
+##>----------------------------------------------------------------------------------------
+##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
+##>----------------------------------------------------------------------------------------
+##>G:Initial                            0         -         -      8327    124264       308
+##>G:Setup                              0         -         -         -         -         -
+##>G:Launch ST                          0         -         -         -         -         -
+##>G:Design Partition                   0         -         -         -         -         -
+##>G:Create Partition Netlists          0         -         -         -         -         -
+##>G:Init Power                         0         -         -         -         -         -
+##>G:Budgeting                          0         -         -         -         -         -
+##>G:Derenv-DB                          0         -         -         -         -         -
+##>G:Debug Outputs                      0         -         -         -         -         -
+##>G:ST loading                         0         -         -         -         -         -
+##>G:Distributed                        0         -         -         -         -         -
+##>G:Timer                              0         -         -         -         -         -
+##>G:Assembly                           0         -         -         -         -         -
+##>G:DFT                                0         -         -         -         -         -
+##>G:Const Prop                         0         -         -     14269    138897       386
+##>G:Misc                              54
+##>----------------------------------------------------------------------------------------
+##>Total Elapsed                       54
+##>========================================================================================
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'picorv32' to generic gates.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      syn_gen
+@file(synth.tcl) 28: syn_map
+Info    : Mapping. [SYNTH-4]
+        : Mapping 'picorv32' using 'high' effort.
+Mapper: Libraries have:
+	domain _default_: 324 combo usable cells and 128 sequential usable cells
+Configuring mapper costing (none)
+TNS Restructuring config:  at stage: map applied.
+PBS_TechMap-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) |  98.3( 98.2) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:01(00:00:01) |   1.7(  1.8) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_TechMap-Premap HBO Optimizations - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_TechMap-Premap HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) |  98.3( 98.2) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:01(00:00:01) |   1.7(  1.8) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed mapping optimization to kick in.
+Mapper: Libraries have:
+	domain _default_: 324 combo usable cells and 128 sequential usable cells
+Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 72 CPUs usable)
+ 
+Global mapping target info
+==========================
+Cost Group 'clk' target slack:   146 ps
+Target path end-point (Pin: reg_next_pc_reg[29]/d)
+
+Multi-threaded Technology Mapping (8 threads per ST process, 8 of 72 CPUs usable)
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_map                54495        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+           clk               146      602              5000 
+
+ 
+Global incremental target info
+==============================
+Cost Group 'clk' target slack:    97 ps
+Target path end-point (Pin: reg_next_pc_reg[31]/D (DFFQX1/D))
+
+==================================
+Stage : global_incr_map 
+==================================
+  =================
+   Message Summary
+  =================
+-------------------------------------------------------------------------
+|    Id    |Sev  |Count |                 Message Text                  |
+-------------------------------------------------------------------------
+| PA-7     |Info |   18 |Resetting power analysis results.              |
+|          |     |      |All computed switching activities are removed. |
+| PHYS-752 |Info |    1 |Partition Based Synthesis execution skipped.   |
+| SYNTH-2  |Info |    1 |Done synthesizing.                             |
+| SYNTH-4  |Info |    1 |Mapping.                                       |
+-------------------------------------------------------------------------
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_incr               53557        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+           clk                97      316              5000 
+
+
+State Retention Synthesis Status
+================================
+
+Category                        Flops   Percentage
+--------------------------------------------------
+Total instances                  1577        100.0
+Excluded from State Retention    1577        100.0
+    - Will not convert           1577        100.0
+      - Preserved                   0          0.0
+      - Power intent excluded    1577        100.0
+    - Could not convert             0          0.0
+      - Scan type                   0          0.0
+      - No suitable cell            0          0.0
+State Retention instances           0          0.0
+--------------------------------------------------
+
+INFO: skipping constant propagation
+PBS_Techmap-Global Mapping - Elapsed_Time 55, CPU_Time 57.17839000000005
+stamp 'PBS_Techmap-Global Mapping' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) |  49.4( 49.1) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:01(00:00:01) |   0.9(  0.9) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:02(00:01:59) |  00:00:57(00:00:55) |  49.7( 50.0) |   15:48:43 (Jan11) |  390.0 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+Info    : Forcing flat compare. [CFM-212]
+        : No hierarchies found in design.
+Info    : Wrote formal verification information. [CFM-5]
+        : Wrote 'fv/picorv32/fv_map.fv.json' for netlist 'fv/picorv32/fv_map.v.gz'.
+Info    : Wrote dofile. [CFM-1]
+        : Dofile is 'fv/picorv32/rtl_to_fv_map.do'.
+PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 1, CPU_Time 2.0
+stamp 'PBS_TechMap-Datapath Postmap Operations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) |  48.6( 48.2) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:01(00:00:01) |   0.9(  0.9) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:02(00:01:59) |  00:00:57(00:00:55) |  48.8( 49.1) |   15:48:43 (Jan11) |  390.0 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:04(00:02:01) |  00:00:02(00:00:02) |   1.7(  1.8) |   15:48:44 (Jan11) |  390.0 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 0, CPU_Time -0.16915600000001518
+stamp 'PBS_TechMap-Postmap HBO Optimizations' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) |  48.7( 48.2) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:01(00:00:01) |   0.9(  0.9) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:02(00:01:59) |  00:00:57(00:00:55) |  48.9( 49.1) |   15:48:43 (Jan11) |  390.0 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:04(00:02:01) |  00:00:02(00:00:02) |   1.7(  1.8) |   15:48:44 (Jan11) |  390.0 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:03(00:02:01) |  00:00:00(00:00:00) |  -0.1(  0.0) |   15:48:44 (Jan11) |  390.0 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+ Doing ConstProp on design:picorv32 ... 
+
+PBS_TechMap-Postmap Clock Gating - Elapsed_Time 1, CPU_Time 0.0
+stamp 'PBS_TechMap-Postmap Clock Gating' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) |  48.7( 47.8) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:01(00:00:01) |   0.9(  0.9) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:02(00:01:59) |  00:00:57(00:00:55) |  48.9( 48.7) |   15:48:43 (Jan11) |  390.0 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:04(00:02:01) |  00:00:02(00:00:02) |   1.7(  1.8) |   15:48:44 (Jan11) |  390.0 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:03(00:02:01) |  00:00:00(00:00:00) |  -0.1(  0.0) |   15:48:44 (Jan11) |  390.0 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:03(00:02:02) |  00:00:00(00:00:01) |   0.0(  0.9) |   15:48:45 (Jan11) |  390.0 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+-------------------------------------------------------------------------------
+ hi_fo_buf                 53557        0         0         0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       hi_fo_buf         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total DRC Total
+                           Total  Weighted      Neg       Max 
+Operation                   Area   Slacks      Slack      Cap 
+ init_delay                53557        0         0         0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       crit_upsz         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+    plc_st_fence         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      plc_laf_st         0  (        0 /        0 )  0.00
+ plc_laf_st_fence         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+
+ 
+Local TNS optimization status
+=============================
+                                   Group   
+                                  Tot Wrst     Total DRC Total
+                           Total  Weighted      Neg       Max 
+Operation                   Area   Slacks      Slack      Cap 
+ init_tns                  53557        0         0         0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+
+PBS_TechMap-Postmap Cleanup - Elapsed_Time 0, CPU_Time 0.8061679999999996
+stamp 'PBS_TechMap-Postmap Cleanup' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) |  48.3( 47.8) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:01(00:00:01) |   0.8(  0.9) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:02(00:01:59) |  00:00:57(00:00:55) |  48.6( 48.7) |   15:48:43 (Jan11) |  390.0 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:04(00:02:01) |  00:00:02(00:00:02) |   1.7(  1.8) |   15:48:44 (Jan11) |  390.0 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:03(00:02:01) |  00:00:00(00:00:00) |  -0.1(  0.0) |   15:48:44 (Jan11) |  390.0 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:03(00:02:02) |  00:00:00(00:00:01) |   0.0(  0.9) |   15:48:45 (Jan11) |  390.0 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:04(00:02:02) |  00:00:00(00:00:00) |   0.7(  0.0) |   15:48:45 (Jan11) |  390.0 MB | PBS_TechMap-Postmap Cleanup
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+PBS_Techmap-Post_MBCI - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Techmap-Post_MBCI' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:07(00:00:09) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:46:52 (Jan11) |  308.3 MB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:56(00:00:54) |  48.3( 47.8) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic_Opt-Post
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:03(00:01:03) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:46 (Jan11) |  386.6 MB | PBS_Generic-Postgen HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:01(00:00:01) |   0.8(  0.9) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:01:04(00:01:04) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:47:47 (Jan11) |  386.6 MB | PBS_TechMap-Premap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:02(00:01:59) |  00:00:57(00:00:55) |  48.6( 48.7) |   15:48:43 (Jan11) |  390.0 MB | PBS_Techmap-Global Mapping
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:04(00:02:01) |  00:00:02(00:00:02) |   1.7(  1.8) |   15:48:44 (Jan11) |  390.0 MB | PBS_TechMap-Datapath Postmap Operations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:03(00:02:01) |  00:00:00(00:00:00) |  -0.1(  0.0) |   15:48:44 (Jan11) |  390.0 MB | PBS_TechMap-Postmap HBO Optimizations
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:03(00:02:02) |  00:00:00(00:00:01) |   0.0(  0.9) |   15:48:45 (Jan11) |  390.0 MB | PBS_TechMap-Postmap Clock Gating
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:04(00:02:02) |  00:00:00(00:00:00) |   0.7(  0.0) |   15:48:45 (Jan11) |  390.0 MB | PBS_TechMap-Postmap Cleanup
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:02:04(00:02:02) |  00:00:00(00:00:00) |   0.0(  0.0) |   15:48:45 (Jan11) |  390.0 MB | PBS_Techmap-Post_MBCI
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+##>=================== Cadence Confidential (Mapping-Logical) ===================
+##>Main Thread Summary:
+##>----------------------------------------------------------------------------------------
+##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
+##>----------------------------------------------------------------------------------------
+##>M:Initial                            0         -         -     14269    138897       386
+##>M:Pre Cleanup                        0         -         -     14269    138897       386
+##>M:Setup                              0         -         -         -         -         -
+##>M:Launch ST                          0         -         -         -         -         -
+##>M:Design Partition                   0         -         -         -         -         -
+##>M:Create Partition Netlists          0         -         -         -         -         -
+##>M:Init Power                         0         -         -         -         -         -
+##>M:Budgeting                          0         -         -         -         -         -
+##>M:Derenv-DB                          0         -         -         -         -         -
+##>M:Debug Outputs                      0         -         -         -         -         -
+##>M:ST loading                         0         -         -         -         -         -
+##>M:Distributed                        0         -         -         -         -         -
+##>M:Timer                              0         -         -         -         -         -
+##>M:Assembly                           0         -         -         -         -         -
+##>M:DFT                                0         -         -         -         -         -
+##>M:DP Operations                      1         -         -      6226     53557       390
+##>M:Const Prop                         0       316         0      6226     53557       390
+##>M:Cleanup                            0       316         0      6226     53557       390
+##>M:MBCI                               0         -         -      6226     53557       390
+##>M:Const Gate Removal                 0         -         -         -         -         -
+##>M:Misc                              57
+##>----------------------------------------------------------------------------------------
+##>Total Elapsed                       58
+##>========================================================================================
+Info    : Done mapping. [SYNTH-5]
+        : Done mapping 'picorv32'.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      syn_map
+@file(synth.tcl) 29: syn_opt
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'picorv32' using 'low' effort.
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total DRC Total
+                           Total  Weighted      Neg       Max 
+Operation                   Area   Slacks      Slack      Cap 
+ init_iopt                 53557        0         0         0
+-------------------------------------------------------------------------------
+ const_prop                53557        0         0         0
+ simp_cc_inputs            53546        0         0         0
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total DRC Total
+                           Total  Weighted      Neg       Max 
+Operation                   Area   Slacks      Slack      Cap 
+ init_delay                53546        0         0         0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       crit_upsz         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+    plc_st_fence         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      plc_laf_st         0  (        0 /        0 )  0.00
+ plc_laf_st_fence         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+
+==================================
+Stage : incr_opt 
+==================================
+  =================
+   Message Summary
+  =================
+--------------------------------------------------------------------------------
+|   Id    |Sev  |Count |                     Message Text                      |
+--------------------------------------------------------------------------------
+| CFM-1   |Info |    1 |Wrote dofile.                                          |
+| CFM-5   |Info |    1 |Wrote formal verification information.                 |
+| CFM-212 |Info |    1 |Forcing flat compare.                                  |
+| GLO-51  |Info |    7 |Hierarchical instance automatically ungrouped.         |
+|         |     |      |Hierarchical instances can be automatically ungrouped  |
+|         |     |      | to allow for better area or timing optimization. To   |
+|         |     |      | prevent this ungroup, set the root-level attribute    |
+|         |     |      | 'auto_ungroup' to 'none'. You can also prevent        |
+|         |     |      | individual ungroup with setting the attribute         |
+|         |     |      | 'ungroup_ok' of instances or modules to 'false'.      |
+| PA-7    |Info |    4 |Resetting power analysis results.                      |
+|         |     |      |All computed switching activities are removed.         |
+| SYNTH-5 |Info |    1 |Done mapping.                                          |
+| SYNTH-7 |Info |    1 |Incrementally optimizing.                              |
+--------------------------------------------------------------------------------
+Info    : Done incrementally optimizing. [SYNTH-8]
+        : Done incrementally optimizing 'picorv32'.
+      timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                      syn_opt
+@file(synth.tcl) 34: write_hdl           > final.v
+@file(synth.tcl) 38: write_do_lec -golden_design rtl -revised_design final.v -logfile lec.log > lec_script.tcl
+Info    : Forcing flat compare. [CFM-212]
+        : No hierarchies found in design.
+Info    : Wrote formal verification information. [CFM-5]
+        : Wrote 'fv/picorv32/finalv.fv.json' for netlist 'final.v'.
+Info    : Wrote composite dofile. [CFM-2]
+        : The composite dofile 'lec_script.tcl' includes two compare operations: rtl-to-fv_map and fv_map-to-revised. The 'fv_map' netlist was automatically written in the verification directory during the syn_map command.
+#@ End verbose source synth.tcl
+0
+@genus:root: 2> exit
+Normal exit.

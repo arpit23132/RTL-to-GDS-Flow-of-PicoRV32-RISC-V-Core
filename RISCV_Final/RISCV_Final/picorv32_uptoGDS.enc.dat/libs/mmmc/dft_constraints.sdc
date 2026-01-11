@@ -1,0 +1,1 @@
+/home/arpit23132/Desktop/RISCV_Final/dft_constraints.sdc

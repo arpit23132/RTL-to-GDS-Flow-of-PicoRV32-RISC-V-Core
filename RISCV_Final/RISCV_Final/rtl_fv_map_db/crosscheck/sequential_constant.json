@@ -1,0 +1,1230 @@
+{
+ "filetype": "conformal-table",
+ "data": [
+  {
+   "Object": "/mem_addr_reg[0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/mem_addr_reg[1]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[1]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[2]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[3]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[4]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[5]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[6]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[7]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[8]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[9]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[10]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[11]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[12]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[13]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[14]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[15]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[16]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[17]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[18]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[19]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[20]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[21]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[22]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[23]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[24]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[25]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[26]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[27]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[28]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[29]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[30]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_insn_reg[31]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/instr_getq_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/instr_setq_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/instr_retirq_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/instr_maskirq_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/instr_waitirq_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/instr_timer_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/decoded_imm_j_reg[0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/compressed_instr_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_valid_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[1]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[2]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[3]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[4]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[5]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[6]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[7]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[8]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[9]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[10]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[11]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[12]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[13]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[14]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[15]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[16]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[17]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[18]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[19]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[20]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[21]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[22]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[23]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[24]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[25]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[26]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[27]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[28]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[29]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[30]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/eoi_reg[31]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_valid_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[1]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[2]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[3]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[4]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[5]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[6]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[7]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[8]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[9]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[10]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[11]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[12]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[13]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[14]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[15]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[16]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[17]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[18]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[19]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[20]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[21]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[22]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[23]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[24]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[25]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[26]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[27]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[28]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[29]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[30]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[31]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[32]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[33]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[34]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/trace_data_reg[35]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpu_state_reg[4]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/latched_compr_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/pcpi_timeout_reg",
+   "Type": "DFF/DLAT",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "",
+   "highlite": 1,
+   "Object:style": "color:red",
+   "Type:style": "color:red",
+   "Design:style": "color:red",
+   "User Setup constant:style": "color:red",
+   "LEC constant:style": "color:red"
+  },
+  {
+   "Object": "/do_waitirq_reg",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/reg_next_pc_reg[0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/reg_pc_reg[0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "0",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][31]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][30]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][29]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][28]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][27]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][26]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][25]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][24]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][23]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][22]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][21]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][20]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][19]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][18]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][17]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][16]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][15]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][14]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][13]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][12]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][11]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][10]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][9]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][8]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][7]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][6]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][5]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][4]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][3]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][2]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][1]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  },
+  {
+   "Object": "/cpuregs_reg[0][0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup constant": "",
+   "LEC constant": "0",
+   "highlite": 0
+  }
+ ],
+ "cols": [
+  {
+   "key": "Object"
+  },
+  {
+   "key": "Type"
+  },
+  {
+   "key": "Design"
+  },
+  {
+   "key": "User Setup constant"
+  },
+  {
+   "key": "LEC constant"
+  }
+ ],
+ "sort": [
+  "-highlite"
+ ]
+}

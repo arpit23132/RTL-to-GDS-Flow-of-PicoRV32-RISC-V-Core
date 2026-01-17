@@ -1,0 +1,6 @@
+*.lib
+*.lef
+*.db
+*.enc
+*.dat
+.localhost.*

@@ -51,6 +51,7 @@ getIoFlowFlag
 setIoFlowFlag 0
 #disables automated IO placement flows
 
+
 #floorplanning die siting according to Innovus LRM
 floorPlan -fplanOrigin center -site gsclib090site -r 1 0.65 10.0 10.0 10.0 10.0
 setResizeFPlanMode -shiftBased true -ioMoveWithEdge true
